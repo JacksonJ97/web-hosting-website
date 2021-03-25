@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ====================
+       Typography 
+=======================*/
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+p, blockquote {
+    line-height: 1.3125rem;
+    font-size: 0.8125rem
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+figcaption {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: #00C2FF;
+}
+
+.subtitle {
+    font-size: 0.8125rem;
+    color: #535353;
+}
+
+.address {
+    font-size: 0.8125rem;
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.footer-links {
+    color: rgba(255, 255, 255, 0.53);
+    font-size: 0.8125rem;
+}
+
+/* ====================
+       Layout 
+=======================*/
+
+.container {
+    text-align: center;
+    padding: 1.25em;
+}
+
+.logo {
+    width: 126px;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 25px;
+    margin-top: 45%;
+}
+
+.server {
+    width: 50%;
+    margin: 2em auto 1em 16%;
+}
+
+.blue-container {
+    width: 100%;
+    background-color: #00C2FF;
+    color: white;
+    margin-top: -8px;
+}
+
+.blue-container-top-image {
+    width: 100%;
+    margin-top: -20px;
+} 
+
+.blue-container ul li {
+    margin-bottom: 2.5em;
+}
+
+.blue-container ul li p{
+    margin: 0 .5em;
+}
+
+.blue-container-icon {
+    width: 20%;
+    margin-bottom: 2em;
+}
+
+.gray-container {
+    background-color: #f6f6f6;
+    padding: 2em 0 2em 0;
+}
+
+.gray-container ul li:first-child {
+    margin-bottom: 3em;
+
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    width: 25%;
+    max-width: 122px;
+}
+
+figure blockquote {
+    margin: 1em 1em;
+}
+
+h2 {
+    margin-top: 1em;
+}
+
+.cta {
+    background-color: #00cc80;
+    width: 80%; /* calc(100% - 1em); */
+    display: block;
+    color: white;
+    border-radius: 25px;
+    padding: .35em;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 3% auto 7%;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: #3D444A;
+    margin-top: -8px;
+    padding-bottom: 2em;
+}
+
+.black-container-top-image {
+    width: 100%;
+    margin-top: 1em;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+.footer-links {
+    padding-bottom: 4em;
+}
+
+.terms-of-service {
+    padding-right: 4em;
+}
+
+.privacy-policy {
+    padding-left: 3em;
+}
+
+footer .container {
+    padding: 0 1.25em 1.25em 1.25em;
+}
+
+.address {
+    margin-bottom: 4em;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(36, 55, 59);
+}
+
+nav ul li a:hover {
+    background-color: rgb(65, 73, 78);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img{
+    width: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .server {
+        width: 50%;
+        margin-bottom: 3em;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 2em;
+    }
+
+    .blue-container ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .blue-container-icon {
+        width: 35%;
+        margin-top: -2em;
+    }
+
+    .blue-container ul li {
+        margin-bottom: 2em;
+    }
+
+    .blue-container ul li p {
+        margin: 0 2em;
+    }
+
+    .gray-container ul{
+        display: flex;
+    }
+
+    .gray-container ul li:first-child {
+        margin-bottom: 0;
+    }
+
+    figure blockquote {
+        margin: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 890px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        margin-bottom: 3em;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    footer .logo {
+        margin-left: 2em;
+    }
+
+}
+
+@media only screen and (min-width: 1050px) {
+
+    p, blockquote {
+        font-size: 1.25rem;
+    }
+
+    .blue-container ul li p {
+        margin: 0 1.5em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .blue-container-icon {
+        width: 35%;
+        margin-bottom: 2em;
+    }
+
+    .cta {
+        width: 40%;
+        font-size: 2rem;
+    }
+
+    .address, 
+    .footer-links,
+    figcaption {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    footer .logo {
+        text-align: left;
+    }
+
+    .footer-container {
+        padding-bottom: 3em;
+    }
+
+    .show-desktop {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        color: #000000;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 2em;
+        font-size: 1.25rem;
+    }
+
+    nav ul li a:hover{
+        background-color: inherit;
+    }
+
+    .scroll {
+        width: 30px;
+        animation: move 1s infinite alternate;
+        -webkit-animation: move 1s infinite alternate;
+        -moz-animation: move 1s infinite alternate;
+        -o-animation: move 1s infinite alternate;
+        -ms-animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(20px);
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .container {
+        width: 70%;
+    }
+    p, 
+    blockquote, 
+    nav ul li a {
+        font-size: 1.4375rem;
+    }
+
+    .address, 
+    .footer-links,
+    figcaption {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 3.1875rem;
+    }
+
+    .subtitle {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .cta {
+        font-size: 2.6875rem;
+    }
+
+    .logo {
+        width: 260px;
+    }
+
+    .server {
+        width: 50%;
+        margin-bottom: 4em;
+    }
+
+    .footer-container {
+        padding-bottom: 4em;
+    }
+
+    .header-container {
+        margin-bottom: 14em;
+    }
+
+    .blue-container ul li {
+        margin-bottom: 3em;
+    }
+
+    .blue-container-icon {
+        margin-top: -4em;
+        margin-bottom: 3em;
+    }
+}

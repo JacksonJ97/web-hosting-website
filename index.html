@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Hosting</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container header-container">
+      <header>
+        <a href="#">
+          <img src="/images/logo.svg" alt="26andfour logo" class="logo" />
+        </a>
+
+        <nav>
+          <a href="#" class="hide-desktop">
+            <img src="/images/hamburger.svg" alt="toggle menu" class="menu" id="menu" />
+          </a>
+
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li class="exit-btn hide-desktop" id="exit"><img src="/images/exit.svg" alt="exit menu" /></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section>
+        <img src="/images/server.svg" alt="server graphic" class="server" />
+        <h1 class="title">Web Hosting for the Modern Era</h1>
+        <p class="subtitle">Go serverless and pay only for what you use.</p>
+        <img src="/images/scroll.svg" alt="scroll icon" class="scroll hide-mobile show-desktop" />
+      </section>
+    </div>
+
+    <div class="blue-container-top">
+      <img src="/images/blue container top.svg" alt="" class="blue-container-top-image" />
+    </div>
+
+    <div class="blue-container">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="/images/calender.svg" alt="calender icon" class="blue-container-icon" />
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+          </li>
+
+          <li>
+            <img src="/images/home.svg" alt="home icon" class="blue-container-icon" />
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+          </li>
+
+          <li>
+            <img src="/images/email.svg" alt="email icon" class="blue-container-icon" />
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gray-container">
+      <div class="container">
+        <ul>
+          <li>
+            <figure>
+              <img src="/images/user1.svg" alt="user testimonial picture" />
+              <blockquote><em>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et."</em></blockquote>
+              <figcaption>- John Smith</figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img src="/images/user2.svg" alt="user testimonial picture" />
+              <blockquote><em>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et."</em></blockquote>
+              <figcaption>- Jane Doe</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Start your free trial now!</h2>
+      <a href="#" class="cta">Get Started</a>
+    </div>
+
+    <div class="black-container-top">
+      <img src="/images/black container top.svg" alt="" class="black-container-top-image" />
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <a href="#"><img src="/images/logo-white.svg" alt="26andfour white logo" class="logo" /></a>
+          <p class="address">Melrose Place, 90210<br />USA</p>
+
+          <ul>
+            <li><a href="#" class="footer-links terms-of-service">Terms of Service</a></li>
+            <li><a href="#" class="footer-links privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var menu = document.getElementById("menu");
+      var nav = document.getElementById("nav");
+      var exit = document.getElementById("exit");
+
+      menu.addEventListener("click", function (e) {
+        nav.classList.toggle("hide-mobile");
+        e.preventDefault();
+      });
+
+      exit.addEventListener("click", function (e) {
+        nav.classList.add("hide-mobile");
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
